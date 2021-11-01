@@ -1,0 +1,21 @@
+server:
+  port: 0
+
+eureak:
+  client:
+    service-url:
+      defautlZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: customer-service
+  data:
+    mongodb:
+      database: customer-service
+      host: localhost
+      username: admin
+      password: admin
+      
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
