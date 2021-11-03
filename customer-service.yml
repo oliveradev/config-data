@@ -2,8 +2,6 @@ server:
   port: 9000
 
 spring:
-  application:
-    name: customer-service
   data:
     mongodb:
           uri: mongodb+srv://admin:admin@bootcamp-project.7mgcx.mongodb.net/customer-service?retryWrites=true&w=majority
