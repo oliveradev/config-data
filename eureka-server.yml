@@ -1,13 +1,16 @@
+eureka:
+    client:
+        fetch-registry: 'false '
+        register-with-eureka: 'false '
+        service-url:
+            defaultZone: http://root:s3cr3t@localhost:8761/eureka/
+    instance:
+        hostname: 'localhost '
 server:
     port: 8761
-
-eureka:
-    instance:
-        hostname: localhost
-    client:
-        registerWithEureka: false
-        fetchRegistry: false
-        serviceUrl:
-            defaultZone: http://localhost:8761/eureka
       
-      
+spring:
+    security:
+        user:
+            name: root
+            password: s3cr3t
