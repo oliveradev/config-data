@@ -1,13 +1,10 @@
-eureka:
-    client:
-        service-url:
-            defaultZone: http://root:s3cr3t@localhost:8761/eureka/
 server:
-    port: 9000
-      
+  port: 9000
 spring:
-    security:
-        user:
-            name: root
-            password: s3cr3t
-
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@bootcamp-project.7mgcx.mongodb.net/customer-service?retryWrites=true&w=majority
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
