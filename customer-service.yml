@@ -6,10 +6,10 @@ spring:
     name: customer-service
   data:
     mongo:
-        database: customer-service
-        host: localhost
-        username: admin
-        password: admin
+      database: customer-service
+      host: localhost
+      username: admin
+      password: admin
 eureka:
     client:
         service-url:
