@@ -1,14 +1,13 @@
 server:
     port: 9000
-
-#spring:
-#  data:
-#    mongo:
-#      database: customer-service
-#      host: localhost
-#      username: admin
-#      password: admin
+spring:
+    data:
+        mongodb:
+            database: customer-service
+            host: localhost
+            username: admin
+            password: admin
 eureka:
     client:
         service-url:
-            defaultZone: http://root:s3cr3t@localhost:8761/eureka/        
+            defaultZone: http://localhost:8761/eureka
