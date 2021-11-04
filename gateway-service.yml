@@ -6,14 +6,16 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
 
-# spring:
-#   cloud:
-#     gateway:
-#       discovery:
-#         locator:
-#           enabled: true
-#       routes:
-#         - id: customer-service-bank
-#           uri: lb://customer-service-bank
-#           predicates:
-#             - Path=/customer/**
+spring:
+  cloud:
+    gateway:
+      #discovery:
+      #  locator:
+      #    enabled: true
+      routes:
+        - id: customer-service
+          uri: lb://customer-service
+          predicates:
+            - Path=/api/customer/**
+          #filters:
+          #  - RewritePath=/api/customer/(?<segment>.*), /$\{segment}
