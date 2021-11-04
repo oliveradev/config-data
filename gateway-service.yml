@@ -16,6 +16,6 @@ spring:
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=/api/customer/**
+            - Path=/api/**
           #filters:
           #  - RewritePath=/api/customer/(?<segment>.*), /$\{segment}
