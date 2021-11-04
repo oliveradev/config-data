@@ -9,13 +9,13 @@ eureka:
 spring:
   cloud:
     gateway:
-      #discovery:
-      #  locator:
-      #    enabled: true
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: customer-service
           uri: lb://customer-service
           predicates:
             - Path=/api/**
-          #filters:
-          #  - RewritePath=/api/customer/(?<segment>.*), /$\{segment}
+          filters:
+            - RewritePath=/api/customer/(?<segment>.*), /$\{segment}
