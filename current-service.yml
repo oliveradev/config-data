@@ -1,0 +1,13 @@
+server:
+    port: 9004
+spring:
+    data:
+        mongodb:
+            database: current-service
+            host: localhost
+            username: admin
+            password: admin
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
