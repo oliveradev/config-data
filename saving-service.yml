@@ -3,7 +3,7 @@ server:
 spring:
     data:
         mongodb:
-            database: customer-service
+            database: saving-service
             host: localhost
             username: admin
             password: admin
