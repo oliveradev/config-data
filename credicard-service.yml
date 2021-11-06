@@ -1,0 +1,13 @@
+server:
+    port: 9006
+spring:
+    data:
+        mongodb:
+            database: creditcard-service
+            host: localhost
+            username: admin
+            password: admin
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
