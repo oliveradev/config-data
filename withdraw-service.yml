@@ -1,9 +1,10 @@
 server:
     port: 9007
+    
 spring:
     data:
         mongodb:
-            database: withdraw-service
+            database: customer-service
             host: localhost
             username: admin
             password: admin
