@@ -1,9 +1,10 @@
 server:
     port: 9009
+    
 spring:
     data:
         mongodb:
-            database: deposit-service
+            database: customer-service
             host: localhost
             username: admin
             password: admin
