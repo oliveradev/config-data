@@ -1,0 +1,14 @@
+server:
+    port: 9012
+    
+spring:
+    data:
+        mongodb:
+            database: productreport-service
+            host: localhost
+            username: admin
+            password: admin
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
