@@ -4,10 +4,7 @@ server:
 spring:
     data:
         mongodb:
-            database: transfer-service
-            host: localhost
-            username: admin
-            password: admin
+            uri: mongodb+srv://admin:admin12345@cluster0.7mgcx.mongodb.net/transfer-service?retryWrites=true&w=majority
 eureka:
     client:
         service-url:
