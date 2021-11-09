@@ -1,9 +1,13 @@
 server:
-  port: 9001
+    port: 9001
+    
 spring:
-  data:
-    mongodb:
-      uri: mongodb+srv://admin:admin12345@cluster0.nju59.mongodb.net/transactionsDatabase?retryWrites=true&w=majority
+    data:
+        mongodb:
+            database: transaction-service
+            host: localhost
+            username: admin
+            password: admin
 eureka:
     client:
         service-url:
