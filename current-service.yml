@@ -3,10 +3,8 @@ server:
 spring:
     data:
         mongodb:
-            database: current-service
-            host: localhost
-            username: admin
-            password: admin
+            database: mongodb+srv://admin:admin12345@cluster0.7mgcx.mongodb.net/current-service?retryWrites=true&w=majority
+
 eureka:
     client:
         service-url:
