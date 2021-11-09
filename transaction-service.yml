@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://admin:admin@bootcamp-project.7mgcx.mongodb.net/transactionDatabase?retryWrites=true&w=majority
+      uri: mongodb+srv://admin:admin12345@cluster0.nju59.mongodb.net/transactionsDatabase?retryWrites=true&w=majority
   application:
     name: transaction-service
 eureka:
