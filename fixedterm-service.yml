@@ -3,10 +3,8 @@ server:
 spring:
     data:
         mongodb:
-            database: fixedterm-service
-            host: localhost
-            username: admin
-            password: admin
+            uri: mongodb+srv://admin:admin12345@cluster0.7mgcx.mongodb.net/fixedterm-service?retryWrites=true&w=majority
+            
 eureka:
     client:
         service-url:
