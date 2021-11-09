@@ -4,10 +4,8 @@ server:
 spring:
     data:
         mongodb:
-            database: customer-service
-            host: localhost
-            username: admin
-            password: admin
+            database: mongodb+srv://admin:admin12345@cluster0.7mgcx.mongodb.net/customer-service?retryWrites=true&w=majority
+
 eureka:
     client:
         service-url:
